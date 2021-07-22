@@ -3,11 +3,11 @@ import { useTable } from "react-table";
 import { GuestInfo } from "./GuestInfo";
 
 const List = ({ data }) => {
-  const info = useMemo(() => GuestInfo, []);
+  const columns = useMemo(() => GuestInfo, []);
   const newData = useMemo(() => data, []);
   console.log(data);
   const tableInstance = useTable({
-    info,
+    columns, 
     data: newData
   });
 
