@@ -7,7 +7,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
-app.use("/guests", guestsRoute)
+app.use("/guests", guestsRoute);
+
+app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
 
 // app.get("/", (req, res) => res.send("Hello from /"))
 
@@ -22,5 +24,4 @@ app.use("/guests", guestsRoute)
 
 // })
 
-app.listen(PORT, () => console.log(`Server is running on ${PORT}`))
 
