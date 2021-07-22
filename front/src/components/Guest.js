@@ -1,17 +1,13 @@
-import "./Table.css";
 
 const Guest = ({ name, age }) => {
   return (
     <div>
-      <div className="horizontal-line"></div>
-      <div className="item">
         <p>
-          {name} <bn/>
+          {name}
           ({age})
         </p>
-        <button className="delete-button">Delete</button>
+        <button className="delete-btn">Delete</button>
       </div>
-    </div>
   );
 };
 

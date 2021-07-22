@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import { COLUMNS } from "./columns";
 
-const Table = ({ data }) => {
+const List = ({ data }) => {
   const columns = useMemo(() => COLUMNS, []);
   const newData = useMemo(() => data, []);
   console.log(data);
@@ -31,8 +31,4 @@ const Table = ({ data }) => {
   );
 };
 
-export default Table;
-
-{
-  /* <p>{data[1].name}</p> */
-}
+export default List;
