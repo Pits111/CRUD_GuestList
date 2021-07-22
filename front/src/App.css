@@ -9,6 +9,7 @@
 
 .input-name,
 .input-age {
+  margin-left: 0;
   height: 30px;
   background-color: transparent;
   border: none;
@@ -18,28 +19,30 @@
 
 .input-age {
   margin-top: 8px;
-  justify-content: space-between; 
+  background-color: none;
 }
 
 .input-name {
-  margin-left: 0;
   margin-top: 8px;
+  background-color: none; 
 }
 
 ::placeholder {
-  color:grey;
+  color: black;
   font-size: 20px;
   font-weight: bold;  
 }
 
 .input-container {
-  margin: auto;
+  display: flex; 
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #30C5D9;
+  background-color: none;
   height: 50px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: left;
+  background-color: #F9D71C;
+  border-radius: 3px;
 }
 
 .add-button {
@@ -47,11 +50,11 @@
   background-color: #08F26E;
   border: none;
   height: 50px;
-  width: 70px;
+  width: 200px;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 50px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -87,6 +90,8 @@
   padding-top: 15px;
 }
 
-.wrapper{
+.add-button-container{
   display: flex; 
+  margin-left: 200px;
 }
+

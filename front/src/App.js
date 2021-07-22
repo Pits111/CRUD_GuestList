@@ -81,12 +81,12 @@ class App extends Component {
         alt="birthdayballoons"
         />
         <h1 className="intro-title">Birthday Guest List Manager</h1>
-        <div className="wrapper">
-        <div className="input-container">
+        
+          <div className="input-container">
           <input
             className="input-name"
             type="text"
-            placeholder="Enter Guest Name"
+            placeholder="Name"
             name="name"
             value={this.state.guestInfo.name}
             onChange={this.handleChange}
@@ -99,12 +99,11 @@ class App extends Component {
             value={this.state.guestInfo.age}
             onChange={this.handleChange}
           />
-        <button className="add-button" onClick={this.handleClick}>Edit</button>
-
-        </div>
         </div>
         <ListDetails data={this.state.guest} deleteGuests={this.deleteGuests}/>
-            
+        <div className="add-button-container">
+        <button className="add-button" onClick={this.handleClick}>Add A New Guest </button>
+        </div>
             <Footer />
       </div>
     );
