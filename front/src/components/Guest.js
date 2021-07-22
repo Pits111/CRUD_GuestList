@@ -1,6 +1,6 @@
 import "./List.css"
 
-const Guest = ({ name, age, id, deletesGuests }) => {
+const Guest = ({ name, age, id, deleteGuests }) => {
   return (
     <div>
       <div classname="guest">

@@ -12,48 +12,34 @@
   height: 30px;
   background-color: transparent;
   border: none;
-  color: black;
+  color: black; 
   font-size: 15px;
 }
 
-input:focus {
-  outline: none;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: rgb(95, 95, 95);
-}
-
 .input-age {
-  display: flex;
-  width: 55px;
   margin-top: 8px;
-  margin-left: -20px;
+  justify-content: space-between; 
 }
 
 .input-name {
-  display: flex;
-  margin-left: 10px;
+  margin-left: 0;
   margin-top: 8px;
 }
 
 ::placeholder {
   color:grey;
   font-size: 20px;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 .input-container {
-  display: flex;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #30C5D9;
   height: 50px;
-  width: 600px;
-  padding: 10px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .add-button {
@@ -69,26 +55,12 @@ input:focus::-webkit-input-placeholder {
   font-weight: bold;
 }
 
-.delete-button {
-  border-radius: 3px;
-  background: #CE005B;
-  border: none;
-  height: 50px;
-  width: 70px;
-  margin-top: 8px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .balloons{
   padding: 100px;
   display: block;
   margin: auto;
   height: 250px;
 }
-
 
 .navbar {
   display: flex;
@@ -113,4 +85,8 @@ input:focus::-webkit-input-placeholder {
   background-color: black;
   color: white;
   padding-top: 15px;
+}
+
+.wrapper{
+  display: flex; 
 }
