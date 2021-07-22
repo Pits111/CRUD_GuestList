@@ -4,9 +4,12 @@ const express = require("express")
 const app = express()
 const guestsRoute = require("./routes/guests-route");
 
+const PORT = process.env.PORT || 5000;
+
 app.use(express.json());
 app.use("/guests", guestsRoute)
 
+//app.get("/", (req, res) => res.send("Hello from /"))
 
-app.listen(5000, () => console.log("Server is running on port 5000"))
+app.listen(PORT, () => console.log(`Server is running on ${PORT}`))
 
