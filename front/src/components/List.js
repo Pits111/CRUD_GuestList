@@ -7,7 +7,7 @@ const List = ({ data }) => {
   const newData = useMemo(() => data, []);
   console.log(data);
   const tableInstance = useTable({
-    info,
+    info, 
     data: newData
   });
 
