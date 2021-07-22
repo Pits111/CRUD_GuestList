@@ -1,12 +1,15 @@
+import ".List.css"
 
-const Guest = ({ name, age }) => {
+const Guest = ({ name, age, id, deleteGuests }) => {
   return (
     <div>
+      <div classname="guest">
         <p>
-          {name}
+          {name} <bn/>
           ({age})
         </p>
-        <button className="delete-btn">Delete</button>
+        <button onClick = {() => deleteGuest(id)} className="delte-button">Delete</button>
+      </div>
       </div>
   );
 };

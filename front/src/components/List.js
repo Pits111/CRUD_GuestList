@@ -11,7 +11,7 @@ const List = ({ data }) => {
     data: newData
   });
 
-  const { getTableProps, getTableBodyProps, rows, prepareRow } = tableInstance;
+  const { getTableProps, getTableBodyProps, rows, prepareRow } = listInstance;
 
   return (
     <table {...getTableProps()}>

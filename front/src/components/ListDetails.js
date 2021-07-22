@@ -1,10 +1,10 @@
 import Guest from "./Guest";
 
-const ListDetails = ({ data }) => {
+const ListDetails = ({ data, deleteGuests }) => {
   return (
     <div>
       {data.map((guest) => (
-        <Guest key={data.id} name={guest.name} quantity={guest.age}/>
+        <Guest key={data.id} id={guest.id} name={guest.name} age={guest.age} deleteGuest={deleteGuest}/>
       ))}
     </div>
   );

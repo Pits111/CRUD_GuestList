@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import List from "./components/List";
 import ListDetails from "./components/ListDetails";
 
 class App extends Component {
@@ -47,7 +46,7 @@ class App extends Component {
       .then((res) => res.json())
       .then((data) =>
         this.setState({
-          guest: [...this.state.guest, data],
+          guest: [...this.state.guest, data[0]],
         })
       );
   };
