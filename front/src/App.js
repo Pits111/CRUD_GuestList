@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ListDetails from "./components/ListDetails";
-//import List from "./components/List";
-import NavBar from "./components/NavBar";
+
 
 class App extends Component {
   constructor(props) {
@@ -54,7 +54,7 @@ class App extends Component {
       );
   };
 
-  deleteItems = (id) => {
+  deleteGuests = (id) => {
     fetch(`/guests/${id}`, {
       method: "DELETE",
       headers: {
@@ -99,9 +99,8 @@ class App extends Component {
             value={this.state.guestInfo.age}
             onChange={this.handleChange}
           />
-         
         </div>
-        <ListDetails data={this.state.guest} deleteGuest={this.deleteGuest}/>
+        <ListDetails data={this.state.guest} deleteGuests={this.deleteGuests}/>
         <div className="button-container">
             <button className="add-button" onClick={this.handleClick}>Add</button>
             <button className="delete-button" onClick={this.handleClick}>Delete</button>
