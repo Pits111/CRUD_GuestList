@@ -1,0 +1,13 @@
+.guest {
+    display: flex;
+    flex-direction: block;
+  }
+  
+
+  
+
+  
+  .guest p {
+    margin-left: 18px;
+  }
+  
