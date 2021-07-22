@@ -10,5 +10,5 @@ The purpose of this app is to function as a birthday guest list manager. The ser
 4. As a user, I want to be able to edit guests data on my birthday list. 
 
 ## Mockups 
-[GitHub](https://i.postimg.cc/ZqMLd66V/Mockups-Checkpoint3.png)
+(https://i.postimg.cc/ZqMLd66V/Mockups-Checkpoint3.png)
 
