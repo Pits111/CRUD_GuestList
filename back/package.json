@@ -17,5 +17,9 @@
     "mysql2": "^2.2.5",
     "react-table": "^7.7.0",
     "use-memo": "*"
+  },
+  "engines": {
+    "node": "10.19.0"
   }
+
 }
