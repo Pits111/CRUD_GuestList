@@ -1,9 +1,10 @@
 * {
   font-family: "Robot", sans-serif;
-  margin: 50px;
+  margin-top:0;
+  margin-bottom: 0;
   text-align: center;
   color: black;
-  background-color: palevioletred
+  background-color: white;
 }
 
 .input-name,
@@ -45,17 +46,19 @@ input:focus::-webkit-input-placeholder {
 
 .input-container {
   display: flex;
-  justify-content: center;
-  background-color: pink;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
   height: 50px;
-  width: 800px;
+  width: 600px;
   padding: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .add-button {
   border-radius: 3px;
-  background-color: green;
+  background-color: #08F26E;
   border: none;
   height: 50px;
   width: 70px;
@@ -68,7 +71,7 @@ input:focus::-webkit-input-placeholder {
 
 .delete-button {
   border-radius: 3px;
-  background: red;
+  background: #CE005B;
   border: none;
   height: 50px;
   width: 70px;
@@ -80,7 +83,34 @@ input:focus::-webkit-input-placeholder {
 }
 
 .balloons{
+  padding: 100px;
   display: block;
   margin: auto;
   height: 250px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center; 
+  text-align: center; 
+  background-color: black;
+  height: 7vh; 
+  padding-top: 20px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center; 
+  text-align: center; 
+  background-color: black;
+  height: 7vh; 
+  margin-top: 400px;
+}
+
+.contact-info {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
 }

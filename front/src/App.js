@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
 import ListDetails from "./components/ListDetails";
 //import List from "./components/List";
+import NavBar from "./components/NavBar";
 
 class App extends Component {
   constructor(props) {
@@ -72,13 +74,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <NavBar />
         <img 
         className="balloons"
         src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Balloons-aj.svg"
         alt="birthdayballoons"
         />
         <h1 className="intro-title"
-        >This is my Kids Birthday Guest List Manager</h1>
+        >Birthday Guest List Manager</h1>
         <div className="input-container">
           <input
             className="input-name"
@@ -103,6 +106,7 @@ class App extends Component {
             <button className="add-button" onClick={this.handleClick}>Add</button>
             <button className="delete-button" onClick={this.handleClick}>Delete</button>
           </div>
+          <Footer />
       </div>
     );
   }
