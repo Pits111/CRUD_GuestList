@@ -3,9 +3,9 @@ const router = express.Router();
 const connection = require("../db/config");
 
 router.get("/", (req, res) => {
-  connection.query("SELECT * FROM guest", (err, results) => {
+  connection.query("SELECT * FROM guests", (err, results) => {
     if (err) {
-      res.send("Error retrieving guest from the database");
+      res.send("Error retrieving guests from the database");
     } else {
       res.send(results);
     }
