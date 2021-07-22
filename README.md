@@ -1,6 +1,4 @@
 # CRUD_GuestList
-
-## Crud_Guest 
 The purpose of this app is to function as a birthday guest list manager. The server is connected to a local mysql database. 
 
 ## User Stories
@@ -14,4 +12,5 @@ The purpose of this app is to function as a birthday guest list manager. The ser
 
 ## Data Structure
 [datastructure.png](https://postimg.cc/BPBMJ7m2)
+
 
