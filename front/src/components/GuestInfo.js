@@ -1,4 +1,4 @@
-export const COLUMNS = [
+export const GuestInfo = [
     {
       Header: "name",
       accessor: "name",
