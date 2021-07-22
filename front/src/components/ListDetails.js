@@ -1,6 +1,6 @@
 import Guest from "./Guest";
 
-const ListDetails = ({ data, deleteGuests }) => {
+const ListDetails = ({ data, deleteGuest }) => {
   return (
     <div>
       {data.map((guest) => (

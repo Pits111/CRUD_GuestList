@@ -1,6 +1,6 @@
-import ".List.css"
+import "./List.css"
 
-const Guest = ({ name, age, id, deleteGuests }) => {
+const Guest = ({ name, age, id, deleteGuest }) => {
   return (
     <div>
       <div classname="guest">
@@ -8,7 +8,7 @@ const Guest = ({ name, age, id, deleteGuests }) => {
           {name} <bn/>
           ({age})
         </p>
-        <button onClick = {() => deleteGuest(id)} className="delte-button">Delete</button>
+        <button onClick = {() => deleteGuest(id)} className="delete-button">Delete</button>
       </div>
       </div>
   );

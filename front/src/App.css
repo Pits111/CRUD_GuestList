@@ -1,5 +1,86 @@
-.App {
-  font-family: "Barlow", sans-serif;
-  margin: 30px;
+* {
+  font-family: "Robot", sans-serif;
+  margin: 50px;
+  text-align: center;
+  color: black;
+  background-color: palevioletred
 }
 
+.input-name,
+.input-age {
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: rgb(95, 95, 95);
+}
+
+.input-age {
+  display: flex;
+  width: 55px;
+  margin-top: 8px;
+  margin-left: -20px;
+}
+
+.input-name {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+::placeholder {
+  color:grey;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  height: 50px;
+  width: 800px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.add-button {
+  border-radius: 3px;
+  background-color: green;
+  border: none;
+  height: 50px;
+  width: 70px;
+  margin-right: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.delete-button {
+  border-radius: 3px;
+  background: red;
+  border: none;
+  height: 50px;
+  width: 70px;
+  margin-top: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.balloons{
+  display: block;
+  margin: auto;
+  height: 250px;
+}

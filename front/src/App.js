@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import ListDetails from "./components/ListDetails";
+//import List from "./components/List";
 
 class App extends Component {
   constructor(props) {
@@ -46,9 +47,20 @@ class App extends Component {
       .then((res) => res.json())
       .then((data) =>
         this.setState({
-          guest: [...this.state.guest, data[0]],
+          guest: [...this.state.guest, data],
         })
       );
+  };
+
+  deleteItems = (id) => {
+    fetch(`/guests/${id}`, {
+      method: "DELETE",
+      headers: {
+        Authorization: "Bearer my-token",
+        "My-Custom-Header": "foobar",
+      },
+    });
+    this.setState({ guest: this.state.guest.filter((it) => it.id !== id )});
   };
 
   componentDidUpdate(prevProps, prevState) {
@@ -60,11 +72,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img 
+        className="balloons"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Balloons-aj.svg"
+        alt="birthdayballoons"
+        />
+        <h1 className="intro-title"
+        >This is my Kids Birthday Guest List Manager</h1>
         <div className="input-container">
           <input
             className="input-name"
             type="text"
-            placeholder="First and last name"
+            placeholder="Name of Guest"
             name="name"
             value={this.state.guestInfo.name}
             onChange={this.handleChange}
@@ -74,12 +93,16 @@ class App extends Component {
             type="text"
             placeholder="Age"
             name="age"
-            value={this.state.guestInfo.quantity}
+            value={this.state.guestInfo.age}
             onChange={this.handleChange}
           />
-          <button className="add-button" onClick={this.handleClick}>Add</button>
+         
         </div>
-        <ListDetails data={this.state.guest}/>
+        <ListDetails data={this.state.guest} deleteGuest={this.deleteGuest}/>
+        <div className="button-container">
+            <button className="add-button" onClick={this.handleClick}>Add</button>
+            <button className="delete-button" onClick={this.handleClick}>Delete</button>
+          </div>
       </div>
     );
   }

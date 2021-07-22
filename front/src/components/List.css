@@ -1,18 +1,11 @@
 .guest {
     display: flex;
-    flex-direction: row;
+    flex-direction: block;
   }
   
-  .delete-button {
-    height: 20px;
-    width: 50px;
-    border: none;
-    background-color: #eaf565;
-    margin: 16px 0 0 30px;
-    font-size: 11px;
-    cursor: pointer;
-    box-shadow: 1px 1px 3px 0 #d3d3d3;
-  }
+
+  
+
   
   .guest p {
     margin-left: 18px;
