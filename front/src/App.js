@@ -65,7 +65,7 @@ class App extends Component {
           <input
             className="input-name"
             type="text"
-            placeholder="Insert Name"
+            placeholder="First and last name"
             name="name"
             value={this.state.guestInfo.name}
             onChange={this.handleChange}
