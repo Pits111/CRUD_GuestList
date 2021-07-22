@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
+  font-family: "Barlow", sans-serif;
+  margin: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icecream {
+  display: block;
+  margin: auto;
+  height: 250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro-title {
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.highlight {
+  background-color: #EAF565;
+}
+
+.input-name,
+.input-quantity {
+  height: 30px;
+  background-color: transparent;
+  border: none;
   color: white;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+input:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus::-webkit-input-placeholder {
+  color: rgb(95, 95, 95);
+}
+
+.input-quantity {
+  width: 55px;
+  margin-top: 8px;
+  margin-left: -20px;
+}
+
+.input-name {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+.input-container {
+  background-color: black;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-button {
+  background-color: #EAF565;
+  border: none;
+  height: 30px;
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  cursor: pointer;
 }
